@@ -7,30 +7,6 @@ header, footer {
     font-family: Montserrat, sans-serif;
     justify-content: center;
   }
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Montserrat, sans-serif;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
 
   h1 {
     font-family: Montserrat, sans-serif;
@@ -71,4 +47,8 @@ header, footer {
     color: #4a4a4a;
     padding: 10px 0px 10px 10px;
     border-top: 1px solid #4a4a4a;
+  }
+
+  .aboutme {
+      padding-left: 16px;
   }
