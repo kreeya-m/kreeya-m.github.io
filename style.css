@@ -1,0 +1,7 @@
+header, footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-width: 500px;
+    font-family: "sans-serif";
+  }
