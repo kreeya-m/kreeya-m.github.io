@@ -43,7 +43,7 @@ header, footer {
     font-size: 14px;
   }
   
-  main {
+  .container2 {
     font-family: Montserrat, sans-serif;
     color: black;
     background-color: gainsboro;
