@@ -4,12 +4,12 @@ header, footer {
     text-align: center;
     min-width: 500px;
     height: 20px;
-    font-family: "sans-serif";
+    font-family: "Montserrat";
     justify-content: center;
-
   }
 
   main {
+    font-family: "Montserrat";
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: repeat(3, 450px);
@@ -22,4 +22,16 @@ header, footer {
     align-content: start;
     grid-auto-rows: 500px;
     grid-auto-flow: row;
+  }
+
+  .description {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #4a4a4a;
+    padding: 10px 0px 10px 10px;
+    border-top: 1px solid #4a4a4a;
   }
