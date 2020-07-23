@@ -59,7 +59,8 @@ header, footer {
   }
 
   .foodpic {
-    max-width: 200px;
+    width: 100px;
+    max-width: 100%;
   }
 
   .aboutme {
@@ -67,5 +68,6 @@ header, footer {
   }
 
   .photokm {
-    max-width: 200px;
+    width: 100px;
+    max-width: 100%;
   }
