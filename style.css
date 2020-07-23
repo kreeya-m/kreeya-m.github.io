@@ -70,3 +70,7 @@ header, footer {
     grid-template-rows: 50% 50%;
     grid-gap: 5px 5px;
   }
+
+  .box_a {
+    width: 50px;
+  }
