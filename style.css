@@ -1,4 +1,4 @@
-header, footer {
+/* header, footer {
     background-color: darkblue;
     color: white;
     text-align: center;
@@ -6,7 +6,7 @@ header, footer {
     height: 20px;
     font-family: Montserrat, sans-serif;
     justify-content: center;
-  }
+  } */
 
   body {
     margin: 0;
@@ -32,10 +32,10 @@ header, footer {
     color: black;
   }
   
-  .topnav a.active {
+  /* .topnav a.active {
     background-color: darkblue;
     color: white;
-  }
+  } */
 
   h1 {
     font-family: Montserrat, sans-serif;
@@ -51,19 +51,6 @@ header, footer {
   .container2 {
     min-width: 500px;
     margin: auto;
-  }
-
-.grid {
-    font-family: Montserrat, sans-serif;
-    color: black;
-    background-color: gainsboro;
-    border: 2px black solid;
-    height: 400px;
-    width: 400px;
-    display: grid;
-    grid-template-columns: repeat(2, 200px); 
-    grid-template-rows: repeat(2, 200px);
-    grid-gap: 10px 10px;
   }
 
   .description {
@@ -84,20 +71,30 @@ header, footer {
     border: 2px darkblue solid;  
   }
 
-  .foodpic {
-    width: 100px;
-    max-width: 100%;
+  .foodpic,
+  .aboutpic {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
   }
 
-  .grid2 {
-    padding-left: 15px;
-    border: 2px darkblue solid;
-    height: 400px;
-    width: 400px;
+  .grid-container {
     display: grid;
     grid-template-columns: 50% 50%; 
     grid-template-rows: 50% 50%;
     grid-gap: 5px 5px;
+    padding: 15px;
+    border: 2px darkblue solid;
+    height: 400px;
+    width: 400px;
+  }
+
+  .grid-item { 
+    background-color: white; 
+    border: 1px solid black; 
+    padding: 15px; 
+    font-size: 30px; 
+    text-align: left; 
   }
 
   .box_a {
@@ -108,5 +105,5 @@ header, footer {
   }
 
   .box_b {
-    padding-left: 15px;
+    padding: 15px;
   }
