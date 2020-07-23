@@ -72,5 +72,11 @@ header, footer {
   }
 
   .box_a {
-    width: 50px;
+    width: 1000px;
+    height: 100px;
+    padding-left: 15px;
+  }
+
+  .box_b {
+    padding-left: 15px;
   }
