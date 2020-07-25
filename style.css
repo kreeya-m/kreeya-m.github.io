@@ -1,12 +1,26 @@
-/* header, footer {
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    min-width: 500px;
-    height: 20px;
-    font-family: Montserrat, sans-serif;
-    justify-content: center;
-  } */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkblue;
+  color: white;
+}
 
   body {
     margin: 0;
@@ -68,6 +82,9 @@
     border: 2px darkblue solid;
     height: 400px;
     width: 400px;
+    box-sizing: border-box;
+    background-color: darkred;
+    color: whitesmoke;
   }
 
   .grid-item { 
@@ -88,3 +105,11 @@
   .box_b {
     padding: 15px;
   }
+  
+  /* 
+  src="images/aboutpic.jpeg" 
+  src="images/mochicake.jpeg" 
+  src="images/ebelskivers.jpeg" 
+  src="images/savcrepes.jpeg" 
+  src="images/sweetcrepes.jpeg" 
+  */
