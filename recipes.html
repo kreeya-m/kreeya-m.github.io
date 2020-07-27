@@ -3,11 +3,20 @@
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 <title>Kreeya Makan Personal Site</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  .topnav {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topnav {
     overflow: hidden;
     background-color: #333;
+    font-weight: 700;
   }
   
   .topnav a {
@@ -28,49 +37,77 @@
     background-color: darkblue;
     color: white;
   }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 100%;}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  border: 1px blue;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: ghostwhite;
+}
 </style>
 </head>
-
 <body>
+
 <div class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="recipes.html">Recipes</a>
-    <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+  <a class="active" href="recipes.html">Recipes</a>
+  <a href="about.html">Contact</a>
 </div>
 
-<div class="container2">
-    <header>
-        <h1>Recipes</h1>
-    </header>
-    <div class="ra">
-      <img class="foodpic" src="images/mochicake.jpeg" alt="Chocolate Mochi Cake Image"/>
+<div class="row">
+  <div class="col-1 menu">
+    <ul>
+    
+      <li><img class="foodpic" src="images/mochicake.jpeg" alt="Chocolate Mochi Cake Image"/>
       <h2>CHOCOLATE MOCHI CAKE</h2>
-      <p class="description">
-            This delicious chocolate cake has the perfect mochi consistency!</p>
+      <p>This delicious chocolate cake has the perfect mochi consistency!</p></li>
       <br>
-    </div>
-    <div class="rb">
-      <img class="foodpic" alt="Raspberry Ebelskivers Image"/>
+      
+      <li><img class="foodpic" src="images/ebelskivers.jpeg"alt="Raspberry Ebelskivers Image"/>
       <h2>RASPBERRY EBELSKIVERS</h2>
-      <p class="description">
-              These danish pancakes are filled with raspberries for a morning treat!</p>
+      <p>These danish pancakes are filled with raspberries for a morning treat!</p></li>
       <br>
-    </div>
-    <div class="rc">
-      <img class="foodpic" alt="Savory Crepes Image"/>
+      
+      <li><img class="foodpic" alt="Savory Crepes Image"/>
       <h2>SMOKED SALMON AND AVOCADO CREPES</h2>
-      <p class="description">
-              A crepe can be eaten at any time in the day and a healthy combo of smoked salmon and avocado leaves you full and happy!</p>
+      <p>A crepe can be eaten at any time in the day and a healthy combo of smoked salmon and avocado leaves you full and happy!</p></li>
       <br>
-    </div>
-    <div class="rd">
-      <img class="foodpic" alt="Sweet Crepes Image"/>
+      
+      <li><img class="foodpic" alt="Sweet Crepes Image"/>
       <h2>STRAWBERRY APPLE CREPES</h2>
-      <p class="description">
-              Dessert crepes can't be turned down especially when they are filled with delicious fruits</p>
+      <p>Dessert crepes can't be turned down especially when they are filled with delicious fruits</p>
+      </li>
       <br>
-    </div>
-</div>
-</body>
+      
+    </ul>
+  </div>
 
+  
+</div>
+
+</body>
 </html>
