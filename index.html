@@ -3,9 +3,30 @@
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 <title>Kreeya Makan Personal Site</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  .topnav {
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 100%;}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topnav {
     overflow: hidden;
     background-color: #333;
   }
@@ -28,8 +49,28 @@
     background-color: darkblue;
     color: white;
   }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: pink;
+  color: black;
+}
 </style>
 </head>
+<body>
 
 <div class="topnav">
   <a class="active" href="index.html">Home</a>
@@ -37,21 +78,22 @@
   <a href="about.html">About</a>
 </div>
 
-<body>
-<div class="grid-container"> 
-  <div class="grid-item"><img alt="aboutpic"></div> 
-  <br>
-  <div class="grid-item">Hi my name is Kreeya Makan.</div> 
-  <br>
-  <div class="grid-item">I enjoy experimenting with food and finding fun recipes to work with.</div> 
-  <br>
-  <div class="grid-item">I am a graphic designer, coder, photographer and a student. </div> 
-  <br>
-  <div class="grid-item">Connect with me on <a class=linkedin href="https://www.linkedin.com/in/kreeya-makan/" target="_blank">LinkedIn</a></div> 
-  <br>
-  <div class="grid-item">I like to participate in internships or volunteering opportunities that help me cultivate and grow my skills!</div> 
-  <br>
-</div> 
-</body>
+<div class="row">
+  <div class="col-1 menu">
+    <ul>
+      <li>Hi my name is Kreeya Makan</li>
+      <li>I enjoy experimenting with food and finding fun recipes to work with</li>
+      <li>I am a graphic designer, coder, dancer, tennis player and photographer</li>
+      <li>Connect with me on <a class=linkedin href="https://www.linkedin.com/in/kreeya-makan/" target="_blank">LinkedIn</a></li>
+      <li>I have worked in internships at <a class=e1t1 href="http://www.eachoneteachone.is/kreeya-makan.html" target="_blank">Each One Teach One</a> and <a class=him href="https://www.heartinmotion.org/home" target="_blank">Heart in Motion</a></li>
+      <li>Click <a class=graphics href="https://www.instagram.com/p/CDDRkF9AZq_/"target="_blank">here</a> to see my graphic design work with the <a class=iway href="https://www.instagram.com/iwayproject/"target="_blank">IWAY Project</a>, a organization spreading awareness about Asian-American Mental Health</li>
+      <li>I volunteer at <a class=apienc href="https://apienc.org/"target="_blank">APIENC</a>, a non-profit to support the Asian Pacific Islander LGBTQ+ community</li>
+      <li>Check out my coding accomplishments <a class=coding-courses href="https://docs.google.com/document/d/1-q-NOA5kFUTOAYLh-23T77ahVTC8hgIvxgHuDY0Kl0g/edit?usp=sharing" target="_blank">here!</a></li>
+    </ul>
+  </div>
 
+  
+</div>
+
+</body>
 </html>
