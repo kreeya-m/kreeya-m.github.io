@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-<title>Kreeya Makan Personal Site</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Montserrat", sans-serif;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    font-weight: 700;
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Kreeya Makan Personal Site</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * {
+    box-sizing: border-box;
   }
-  
-  .topnav a {
+
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .topnav {
+      overflow: hidden;
+      background-color: #333;
+      font-weight: 700;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: darkblue;
+      color: white;
+    }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
+    padding: 15px;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
+
+  .col-1 {width: 100%;}
+
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    border: 1px blue;
     color: black;
-  }
-  
-  .topnav a.active {
-    background-color: darkblue;
-    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .menu li:hover {
+    background-color: ghostwhite;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
+  .foodpic {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
 
-.col-1 {width: 100%;}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  border: 1px blue;
-  color: black;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: ghostwhite;
-}
-
-.foodpic {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-}
-
-</style>
+  </style>
 </head>
 <body>
 
